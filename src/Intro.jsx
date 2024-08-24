@@ -24,7 +24,9 @@ const Intro = () => {
         di comunicare sempre con i colleghi.
         <br />
       </p>
-      <h2 className="fs-4 ms-3 fw-bolder mt-5 text-center ">Tech Skills:</h2>
+      <h2 className="tech fs-4 ms-3 fw-bolder mt-5 text-center ">
+        Tech Skills:
+      </h2>
       <h5 className="text-center ms-4 mt-5 fst-italic">Front-end</h5>
       <div className="d-flex flex-wrap justify-content-center ms-4 mt-5 ">
         <img
@@ -132,7 +134,9 @@ const Intro = () => {
           ></img>
         </div>
         <div>
-          <h4 className="fw-bolder text-center mt-5 fst-italic">Contatti:</h4>
+          <h4 className="contact fw-bolder text-center mt-5 fst-italic">
+            Contatti:
+          </h4>
           <h6 className="text-center mt-3">angiprestano99@gmail.com</h6>
           <div className="d-flex flex-column text-center">
             <a href="https://www.linkedin.com/in/angela-prestano-full-stack-developer/">

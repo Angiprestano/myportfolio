@@ -13,6 +13,14 @@ body{
   border-radius: 30px;
 }
 
+.contact{
+  color: rgb(56, 42, 42);
+}
+
+.tech{
+  color: rgb(87, 48, 48);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
