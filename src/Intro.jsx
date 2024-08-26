@@ -14,7 +14,7 @@ const Intro = () => {
       <div className="d-flex justify-content-center mt-4">
         <img
           src={fotoLaurea}
-          width={"230px"}
+          width={"220px"}
           alt="Foto Laurea"
           className="image"
         ></img>
@@ -188,10 +188,16 @@ const Intro = () => {
           </h4>
           <h6 className="text-center mt-3">angiprestano99@gmail.com</h6>
           <div className="d-flex flex-column text-center">
-            <a href="https://www.linkedin.com/in/angela-prestano-full-stack-developer/">
+            <a
+              href="https://www.linkedin.com/in/angela-prestano-full-stack-developer/"
+              className="fw-bold"
+            >
               Linkedin
             </a>
-            <a href="https://github.com/Angiprestano?tab=repositories">
+            <a
+              href="https://github.com/Angiprestano?tab=repositories"
+              className="fw-bold"
+            >
               Github
             </a>
           </div>
