@@ -20,13 +20,13 @@ const Intro = () => {
         ></img>
       </div>
       <p className="ms-3 mt-3 text-center">
-        Sono una Junior full stack developer con tanta voglia di imparare e
-        crescere, sempre pronta ad imparare nuove tecnologie e skills per stare
-        sempre al passo, poichè ad oggi <br></br>il mondo tech è in continua
-        evoluzione. Do tutta me stessa per portare a termine i lavori con
-        dedizione e passione e prediligo molto il lavoro in team <br></br>{" "}
-        poichè si ha sempre la possibilità di confronto e sopratutto si ha modo
-        di comunicare sempre con i colleghi.
+        Sono una Junior full stack developer con tanta voglia di crescere,
+        sempre pronta ad imparare nuove tecnologie e skills <br></br> per stare
+        sempre al passo, poichè ad oggi il mondo tech è in continua evoluzione.{" "}
+        <br></br> Mi impegno a portare a termine i lavori con dedizione e
+        passione, prediligo molto il lavoro in team <br></br> poichè si ha
+        sempre la possibilità di confronto e sopratutto si ha modo di comunicare
+        sempre con i colleghi.
         <br />
       </p>
       <h2 className="tech fs-4 ms-3 fw-bolder mt-5 text-center ">
@@ -79,58 +79,59 @@ const Intro = () => {
         ></img>
         <img
           src="https://noemipusceddu.netlify.app/assets/vscode-odvdStlw.png"
+          alt="vsCode"
           width={"90px"}
           height={"90px"}
-          className="ms-5"
+          className="ms-5 mt-3"
         ></img>
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAAAXNSR0IArs4c6QAAC1RJREFUeF7tnXlwVdUdx78hZCMbAbKwhJ2wyxrLJqLMiFIpQwtWhlotizoFUUoRpJ2WdkZQa0GxMIxAEXDA4jRUFKXUCkihYIlICgkESAgxmISQEBICCVvnXHyV5ZF3z733995N+J5/HjM553t+93s+nLud+ztBYKEDAg4ECWhSkg7gO7Dm7rtGP+iAbQfm9zeYIli2naTATQ4QLAIh4gDBErGVogSLDIg4QLBEbKUowSIDIg4QLBFbKUqwyICIAwRLxFaKEiwyIOIAwRKxlaIEiwyIOECwRGylKMEiAyIOECwRWylKsMiAiAMES8RWihIsMiDiAMESsZWiBIsMiDhAsERspSjBIgMiDhAsEVspSrDIgIgDBEvEVooSLDIg4gDBErGVogSLDIg4QLBEbKUowSIDIg4QLBFbKUqwyICIAwRLxFaKEiwyIOIAwRKxlaIEiwyIOECwRGylKMEiAyIOECwRWylKsMiAiAMES8RWihIsMiDiAMESsZWiBIsMiDhAsERspSjBIgMiDhAsEVspSrDIgIgDBEvEVooSLDIg4gDBErGVogSLDIg4QLBEbKUowSIDIg4QLBFbKUqwyICIAwRLxFaKEiwyIOIAwRKxlaIEiwyIOECwRGylKMEiAyIOECwRWylKsMiAiAMES8RWihKsuslAj8QItIoJQVRYMKJCgxEZGmT8BjcIQlHlJRRWXDJ+iyovG781V67590DdBFZYwyBsebKTfw0Q7O3l7d/g0+MVjvUwvEMMRnWJxfc7x6Jj0zAt3U+yy7Eq/QzeP1im1c5yZTeBFRfREKW/7mX5WNzWcPS7x7Ep66ytsFrEhGDO0CQ8kqIPk7eOc8tqsP5AKdZnlOJg0QVbsdXa2E1gKRMLZt8jd7B+Vn78vRz85b/WZ4gfdG2MhSNboUMTvdnJ7GFO3XQSS/eeNltdr56bwFIGHpvZQ+8AXFx7YloeVqWXWIpwyahk/HxAgqW2Oo3+sLMQL24p0Glirq6bwOqZFIGM57qZC7wO1Jr24Uks2aM3IwxpG4WdUzr79eiOl1Zj4LLDOH3+snP9ugms7yVHYs+zXZw7uAArzfl7AV79vNB0FC1iQlEwu6fp+k5X7LzoELJLLjoj6yawhrWLxrbJKc4cmAtU5v3zFH732TemI1GXAVLXU2aCqLp0FZHz9pup6rsOwfLtkdUaOmClTeiAMd0aW+3KsXabj5Tj0TXH7OsRLPse3knBLFi/fbA55g1vIReIpvLMj/OxcFexZqtbqhMse/7V1tosWLuf7YKByZFygVhQ7rskC/tPVVlo+W0TgmXdO18tzYDVu3kj7J/W1ZeUX/++Yl8JFu0qRmaxjQeoBEtuzMyA9eLQJLw6oqXlILZkn8O23AqcqbpsvB8MCQ5CcmwoeiVFYFL/Zlq6GYUXsGhXEd758oxWO6+V3QaW/SP6TsHKHaaCYUdupWNhbM+t/V2hmq3UrKVbDp++iAU7CrFm/50hGNEpBjMGJ0L9+irLvjhtzFL18nGDr4PX/fu1l/vpNoGZWUZb9A4NusaHI/OF7tpyZRcuY+TqY9iTf95UWzUjqpnRW/nyVJUxS737VakpLdOV3DRjmQ7aZEW3gzUyJQabLazmGLvuOP56SO/l9rZJKRjWPvom5/60R81SRcgprTbpqEY1gnWzWf6cscb3aoJ1j7XTGK3rVZMWHDDWWemUlGZh2DihI7olhGNv/nm8sbsI72VYf0Hus2+CFTiwnrk3HstGt/Y5RjdWOFFWjXavH9Rq46ncPTECk/o1xRu7i3HybI0lDdONCFbgwJp1XyJee7iV6bFSFTOLL6L7m4e02gSkMsEKHFgv3Z+E+Q/pP2rosTgThyQX6TlBIsEKHFg/7dMUq8e21R7GGZvzjdOZqwvBChxYwztE49OJ+qs51HXWAyuzcaJM+DrJDrkEK3BgdYkPR5aF51gq4k2HyzEp7QRKnFycZwekW9sSrMCBFR3WAOd+08fycKYXVBnrvT48rPdMy3KHOg0JVuDAUj1nTO+GnokROkN2W92PjpTj7S9K3AUYwQosWHPuT8ICC3eG3kh0FWAEK7BgtW4cirxZzq5zV4At/0+J7W8abU2jBCuwYKneN4xvj3E94myNo7fGW4+dw8p9Jdhg49tGy0ERrMCDNbB1FLY81RExYcGWx7G2hjtyKwzA1jq9gqG2TglW4MFSEahFeSvGtBEByyOqXj6vTC8xTpPihWC5AywVxcKRyZgxWP7r53/lVWLx7mLZBCEEyz1gSV5veZuh/pZ5Fov/XYxtOc5lxPl/PwTLXWD5Gy7Vn/p44hcff42K6ivOnSEJlvvAUhGtGdcOT/Ru4txA+1DanlOBZz7IQ3aJQ6tJCZY7wVJRPT8oEa+MaInwhkF+A+yBFdnw9QGIqWAIlnvBUpGp7DOzhiRC5cryV/nVPwowf7v5ZCZe4yJY7gbLE93DKbHGsuKxAg9SvYExZWOece1luRCsugGWJ8oH20djcmo8xt/j/JP6WyEa8c5RbD16zhpbBKtugeWJdkibKExObYYn+zS1NvAmWu0rqELq0iwTNb1UIVh1EyxP1Pe2isTk/s0wJVXvc3qztDy2Psfag1SCVbfB8kTfr2UjPJ0aj6cdBkytVB291kK+LIJVP8CSBGzI20ewK08znwXBql9gSQD2+s4izNrytdmz5/V6BKt+gnUjYLOHJtla76XuDNUdolYhWPUbLM/R/axfU/z5h/rfMKr256qvIPb3X2lxxRnrFrv8mRREb6Ts17azvr7XW5lQidlMF85Yd8eM5TnK9Kld0beFfqK3yRvzjFWopgvBcidYKt1jfrnzXzr/pHcTrB2nnzpJeyYnWO4Cq2tCOKYNSMDlq9fw/Ef5picIsxWtbtJAsG5w2O0Z/W6EQX0GpoCaOiAejUIaGH9St/jqVt/JQrAccLMugKU2/5wxKBEvDE5EYlTD247a1otgLx6q1z/LLXy0wRmrDs1Y6npHZTX2dTFtJTXknf5frvpRGzzVV/+9IsGqA2Cp05H6Gkdn8V7/pVlQSUDsFJX2+/MpKYi28P2i9qaevHj338V7UlQI5g5LwnMDrX3i9cqOQry01dqmlfGRIdjweLvbMiebBbXDHw/qZVcmWP4D661RycYFup2y7kApVu8/o7UATyXRnTkkEZ00Nyj3xKnSdSuwtArB8h9Y6m5PPaBUCdfsFpXVT30X+EFWOU6crb4tu1/v5hFIbRWJsd3j8JCJnSlqi0fta61OhVqFYPkPLNXTmG5xSJvQXmuMzFZWsKn0kWptlpXrqDv1MzHtBFala+6vQ7D8C5bqbfrABLz5aLJZXgJa7/2DZVCrSLULwfI/WKrHNWPb4gnB9eraIHhpUFlzFUOXH7G2byHBCgxYqlcrD3CdAMasxtytBcYOY5YKwQocWKrn3F/2QNu4MEtjJ9nI8inQExTBCixYqndvO3NJQuNL2zZUqgOCFXiwVARWX7X4gkT3745ARbBut137nZjuyNVSX+1mrxKBxEXIpIz0FapjUBEsd4GloklpFm48jlDLZ/xVPsupwJI9xUjT3Fyz1vh4KnTHqfDWQRrUOgrTByXgxz3lcjSorX+X7j2NtbXsK20ZboLlTrA8UamNwge3icJ9baIsv0C+8QgzCquwPbfS+ABVNE13fQZLLU+xUhxJPGalYx9tEiIbGvmyHkmJNbbgjQoNRmRog29/g4zf8zVXcf7S1eu/NVeMfxeUX8In2eXYkVuJo2cuCkTmRbI+g+UfB9mLVwcIFsEQcYBgidhKUYJFBkQcIFgitlKUYJEBEQcIloitFCVYZEDEAYIlYitFCRYZEHGAYInYSlGCRQZEHLgNLJFeKHq3OuC/fcvuVofv0uP+H1phyuKW0Y1ZAAAAAElFTkSuQmCC"
           width={"90px"}
           height={"90px"}
-          className="ms-5"
+          className="ms-5 mt-3"
         ></img>
         <img
           src="https://cdn-icons-png.flaticon.com/512/174/174881.png"
           width={"90px"}
           height={"90px"}
-          className="ms-5"
+          className="ms-5 mt-3"
         ></img>
         <img
           src={angular}
           width={"90px"}
           height={"90px"}
-          className="ms-5"
+          className="ms-5 mt-4"
         ></img>
       </div>
       <div className="mb-4 ">
-        <h5 className="mt-5 ms-4 text-center fst-italic">Back-end</h5>
-        <div className="d-flex d-flex justify-content-center mt-5">
+        <h5 className=" mt-5 ms-4 text-center fst-italic">Back-end</h5>
+        <div className="d-flex flex-wrap justify-content-center mt-5">
           <img
             src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
             width={"90px"}
             height={"90px"}
-            className="ms-5"
+            className="ms-5 mb-3"
           ></img>
           <img
             src="https://noemipusceddu.netlify.app/assets/postgres-DbicGTFr.png"
             width={"90px"}
             height={"90px"}
-            className="ms-5"
+            className="ms-5 mb-3"
           ></img>
           <img
             src="https://www.svgrepo.com/show/354202/postman-icon.svg"
             height={"90px"}
-            className="ms-5"
+            className="ms-5 mb-3"
           ></img>
           <img
             src="data:image/png;base64,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"
             height={"90px"}
-            className="ms-5"
+            className="ms-5 mb-3"
           ></img>
           <img
             src="https://noemipusceddu.netlify.app/assets/intellij-BWS__E_8.png"
             height={"90px"}
-            className="ms-5"
+            className="ms-5 mb-3"
           ></img>
         </div>
         <h5 className="mt-5 ms-4 text-center fst-italic">
@@ -151,9 +152,9 @@ const Intro = () => {
           ></img>
         </div>
         <div>
-          <h5 className="text-center mt-5 fw-bolder ">Progect</h5>
+          <h4 className="text-center mt-5 fw-bolder fst-italic">Progect</h4>
           <div className="d-flex justify-content-evenly pt-3">
-            <div className="d-flex justify-content-center ">
+            <div className="col-12 col-md-4 d-flex justify-content-center mb-4 ">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={pageInter} />
                 <Card.Body>
@@ -162,7 +163,7 @@ const Intro = () => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className=" col-12 col-md-4 d-flex justify-content-center mb-4">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={schermoDisney} />
                 <Card.Body>
@@ -171,7 +172,7 @@ const Intro = () => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="col-12 col-md-4 d-flex justify-content-center mb-4">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={meteoPag} />
                 <Card.Body>
@@ -181,6 +182,7 @@ const Intro = () => {
               </Card>
             </div>
           </div>
+
           <h4 className="contact fw-bolder text-center mt-5 fst-italic">
             Contatti:
           </h4>
