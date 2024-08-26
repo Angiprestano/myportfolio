@@ -1,4 +1,9 @@
 import fotoLaurea from "./images/fotoLaurea.JPG";
+import angular from "./images/angular-icon-logo.png";
+import { Card } from "react-bootstrap";
+import pageInter from "./images/pageInter.png";
+import schermoDisney from "./images/schermoDisney.png";
+import meteoPag from "./images/meteopag.jpg";
 
 const Intro = () => {
   return (
@@ -84,6 +89,18 @@ const Intro = () => {
           height={"90px"}
           className="ms-5"
         ></img>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174881.png"
+          width={"90px"}
+          height={"90px"}
+          className="ms-5"
+        ></img>
+        <img
+          src={angular}
+          width={"90px"}
+          height={"90px"}
+          className="ms-5"
+        ></img>
       </div>
       <div className="mb-4 ">
         <h5 className="mt-5 ms-4 text-center fst-italic">Back-end</h5>
@@ -134,6 +151,36 @@ const Intro = () => {
           ></img>
         </div>
         <div>
+          <h5 className="text-center mt-5 fw-bolder ">Progect</h5>
+          <div className="d-flex justify-content-evenly pt-3">
+            <div className="d-flex justify-content-center ">
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={pageInter} />
+                <Card.Body>
+                  <Card.Title>InterStore</Card.Title>
+                  <Card.Text>Sito e-commerce di calcio.</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="d-flex justify-content-center">
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={schermoDisney} />
+                <Card.Body>
+                  <Card.Title>Disney Plus</Card.Title>
+                  <Card.Text>Piattaforma disney plus</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="d-flex justify-content-center">
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={meteoPag} />
+                <Card.Body>
+                  <Card.Title>Meteo</Card.Title>
+                  <Card.Text>Website meteo</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
           <h4 className="contact fw-bolder text-center mt-5 fst-italic">
             Contatti:
           </h4>
