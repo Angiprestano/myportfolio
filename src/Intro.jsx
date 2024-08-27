@@ -113,7 +113,7 @@ const Intro = () => {
             className="ms-5 mb-3"
           ></img>
           <img
-            src="https://noemipusceddu.netlify.app/assets/postgres-DbicGTFr.png"
+            src="https://static-00.iconduck.com/assets.00/postgresql-icon-1987x2048-v2fkmdaw.png"
             width={"90px"}
             height={"90px"}
             className="ms-5 mb-3"
