@@ -153,8 +153,8 @@ const Intro = () => {
         </div>
         <div>
           <h4 className="text-center mt-5 fw-bolder fst-italic">Progect</h4>
-          <div className="d-flex justify-content-evenly pt-3">
-            <div className="col-12 col-md-4 d-flex justify-content-center mb-4 ">
+          <div className=" d-flex justify-content-evenly pt-3">
+            <div className=" cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={pageInter} />
                 <Card.Body>
@@ -162,11 +162,15 @@ const Intro = () => {
                   <Card.Text>Sito e-commerce di calcio.</Card.Text>
                 </Card.Body>
                 <div className="d-flex justify-content-end me-2">
-                  <Button className="but1 ms-2 mb-1  "> Click for repo </Button>
+                  <Button className="but1 ms-2 mb-1">
+                    <a href="https://github.com/Angiprestano/shop-football-front.git">
+                      Click for repo
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>
-            <div className=" col-12 col-md-4 d-flex justify-content-center mb-4">
+            <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={schermoDisney} />
                 <Card.Body>
@@ -174,11 +178,15 @@ const Intro = () => {
                   <Card.Text>Piattaforma disney plus</Card.Text>
                 </Card.Body>
                 <div className="d-flex justify-content-end me-2">
-                  <Button className="but1 ms-2 mb-1 "> Click for repo </Button>
+                  <Button className="but1 ms-2 mb-1 ">
+                    <a href="https://github.com/Angiprestano/disneyplus-create.git">
+                      Click for repo
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>
-            <div className="col-12 col-md-4 d-flex justify-content-center mb-4">
+            <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={meteoPag} />
                 <Card.Body>
@@ -186,7 +194,11 @@ const Intro = () => {
                   <Card.Text>Website meteo</Card.Text>
                 </Card.Body>
                 <div className="d-flex justify-content-end me-2">
-                  <Button className="but1 ms-2 mb-1  "> Click for repo </Button>
+                  <Button className="but1 ms-2 mb-1">
+                    <a href="https://github.com/Angiprestano/create-meteo.git">
+                      Click for repo
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>

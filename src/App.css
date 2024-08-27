@@ -21,8 +21,16 @@ body{
   background-color: #9ab0e7;
   color: rgb(27, 27, 66);
   width: 120px;
-  
-  
+}
+
+.cardd:active{
+  cursor: pointer;
+  scale: (1.5);
+}
+
+.cardd:hover{
+transform: scale(1.1);
+transition: 1s ease-in;
 }
 
 a{
