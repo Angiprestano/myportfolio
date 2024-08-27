@@ -1,6 +1,6 @@
 import fotoLaurea from "./images/fotoLaurea.JPG";
 import angular from "./images/angular-icon-logo.png";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import pageInter from "./images/pageInter.png";
 import schermoDisney from "./images/schermoDisney.png";
 import meteoPag from "./images/meteopag.jpg";
@@ -19,7 +19,7 @@ const Intro = () => {
           className="image"
         ></img>
       </div>
-      <p className="ms-3 mt-3 text-center">
+      <p className="bio ms-3 mt-3 text-center">
         Sono una Junior full stack developer con tanta voglia di crescere,
         sempre pronta ad imparare nuove tecnologie e skills <br></br> per stare
         sempre al passo, poichè ad oggi il mondo tech è in continua evoluzione.{" "}
@@ -72,35 +72,35 @@ const Intro = () => {
           className="ms-5"
         ></img>
         <img
-          src="https://camo.githubusercontent.com/b872b9ada0c2c3d373bbb0c356eb4af353127335fc3d2e611964433864ab4de1/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67"
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
           width={"90px"}
           height={"90px"}
           className="ms-5"
         ></img>
         <img
-          src="https://noemipusceddu.netlify.app/assets/vscode-odvdStlw.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519"
           alt="vsCode"
           width={"90px"}
           height={"90px"}
-          className="ms-5 mt-3"
+          className="ms-5 mt-1"
         ></img>
         <img
           src="data:image/png;base64,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"
           width={"90px"}
           height={"90px"}
-          className="ms-5 mt-3"
+          className="ms-5 mt-1"
         ></img>
         <img
           src="https://cdn-icons-png.flaticon.com/512/174/174881.png"
           width={"90px"}
           height={"90px"}
-          className="ms-5 mt-3"
+          className="ms-5 mt-1"
         ></img>
         <img
           src={angular}
           width={"90px"}
           height={"90px"}
-          className="ms-5 mt-4"
+          className="ms-5 mt-1"
         ></img>
       </div>
       <div className="mb-4 ">
@@ -161,6 +161,9 @@ const Intro = () => {
                   <Card.Title>InterStore</Card.Title>
                   <Card.Text>Sito e-commerce di calcio.</Card.Text>
                 </Card.Body>
+                <div className="d-flex justify-content-end me-2">
+                  <Button className="but1 ms-2 mb-1  "> Click for repo </Button>
+                </div>
               </Card>
             </div>
             <div className=" col-12 col-md-4 d-flex justify-content-center mb-4">
@@ -170,6 +173,9 @@ const Intro = () => {
                   <Card.Title>Disney Plus</Card.Title>
                   <Card.Text>Piattaforma disney plus</Card.Text>
                 </Card.Body>
+                <div className="d-flex justify-content-end me-2">
+                  <Button className="but1 ms-2 mb-1 "> Click for repo </Button>
+                </div>
               </Card>
             </div>
             <div className="col-12 col-md-4 d-flex justify-content-center mb-4">
@@ -179,6 +185,9 @@ const Intro = () => {
                   <Card.Title>Meteo</Card.Title>
                   <Card.Text>Website meteo</Card.Text>
                 </Card.Body>
+                <div className="d-flex justify-content-end me-2">
+                  <Button className="but1 ms-2 mb-1  "> Click for repo </Button>
+                </div>
               </Card>
             </div>
           </div>

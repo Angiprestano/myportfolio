@@ -1,9 +1,12 @@
 body{
   background-color: #dcc29f;
-  background: linear-gradient(rgb(144, 136, 136), rgb(151, 141, 185), rgb(147, 87, 111));
+  background: linear-gradient(rgb(208, 124, 124), rgb(238, 227, 232), rgb(204, 129, 129));
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.bio{
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .App {
  
@@ -12,6 +15,14 @@ body{
 
 .image{
   border-radius: 30px;
+}
+
+.but1{
+  background-color: #9ab0e7;
+  color: rgb(27, 27, 66);
+  width: 120px;
+  
+  
 }
 
 a{
