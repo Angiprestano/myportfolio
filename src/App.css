@@ -22,16 +22,20 @@ body{
 }
 
 .smallbtn{
+
     padding: 0.5rem 1rem; 
     font-size: 0.875rem; 
     height: auto; 
     min-width: 100px; 
     line-height: 1.5; 
+    
+    
   }
   
   .small-btn p {
-    margin: 0;
+    margin: 3px;
     font-size: inherit;
+    
   }
 
 .but1{
