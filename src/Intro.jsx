@@ -15,6 +15,9 @@ import { Card, Button } from "react-bootstrap";
 import pageInter from "./images/pageInter.png";
 import schermoDisney from "./images/schermoDisney.png";
 import meteoPag from "./images/meteopag.jpg";
+import netflix from "./images/netflix.jpeg";
+import siteDvd from "./images/siteDvd.jpeg";
+import spotify from "./images/spotify.jpeg";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -180,7 +183,7 @@ const Intro = () => {
               <h4 className="text-center mt-5 fw-bolder fst-italic">Progect</h4>
               <div className=" d-flex justify-content-evenly pt-3">
                 <div className="row ">
-                  <div className=" cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
                     <Card style={{ width: "18rem" }}>
                       <Card.Img variant="top" src={pageInter} />
                       <Card.Body>
@@ -196,7 +199,7 @@ const Intro = () => {
                       </div>
                     </Card>
                   </div>
-                  <div className="col-12 col-md-4 d-flex justify-content-center mb-4 ">
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
                     <Card style={{ width: "18rem" }}>
                       <Card.Img
                         variant="top"
@@ -217,7 +220,7 @@ const Intro = () => {
                     </Card>
                   </div>
 
-                  <div className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
                     <Card style={{ width: "18rem" }}>
                       <Card.Img
                         variant="top"
@@ -230,6 +233,66 @@ const Intro = () => {
                       </Card.Body>
                       <div className="d-flex justify-content-end me-2">
                         <a href="https://github.com/Angiprestano/create-meteo.git">
+                          <Button className="but1 ms-2 mb-1">
+                            Click for repo
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img
+                        variant="top"
+                        src={netflix}
+                        alt="Meteo Website Screen"
+                      />
+                      <Card.Body>
+                        <Card.Title>Netflix</Card.Title>
+                        <Card.Text>Netflix web</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
+                        <a href="https://github.com/Angiprestano/create-netflix.git">
+                          <Button className="but1 ms-2 mb-1">
+                            Click for repo
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img
+                        variant="top"
+                        src={spotify}
+                        alt="Meteo Website Screen"
+                      />
+                      <Card.Body>
+                        <Card.Title>Spotify</Card.Title>
+                        <Card.Text>Website spotify</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
+                        <a href="">
+                          <Button className="but1 ms-2 mb-1">
+                            Click for repo
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img
+                        variant="top"
+                        src={siteDvd}
+                        alt="Meteo Website Screen"
+                      />
+                      <Card.Body>
+                        <Card.Title>Dvd Disney</Card.Title>
+                        <Card.Text>Website for Dvd</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
+                        <a href="https://github.com/Angiprestano/Esercizio-venerdi-13-ottobre.git">
                           <Button className="but1 ms-2 mb-1">
                             Click for repo
                           </Button>
@@ -264,15 +327,15 @@ const Intro = () => {
       </div>
       <div className="d-flex justify-content-center">
         <Button
-          variant="danger"
-          className="small-btn rounded-4 mb-3 me-3 d-flex justify-content-center align-items-center text-white fw-bolder fs-6"
+          variant="info"
+          className="small-btn rounded-4 mb-3 me-3 d-flex justify-content-center align-items-center text-white border-white fw-bolder fs-6"
           onClick={generatePDF}
         >
           <p>Dowload portfolio</p>
         </Button>
         <Button
-          variant="danger"
-          className=" small-btn rounded-4 mb-3  d-flex justify-content-center align-items-center text-white fw-bolder"
+          variant="info"
+          className=" small-btn rounded-4 mb-3 border-white d-flex justify-content-center align-items-center text-white fw-bolder"
           href="/AngelaPrestano-CV.pdf"
           download="AngelaPrestano-CV.pdf"
         >

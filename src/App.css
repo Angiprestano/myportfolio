@@ -1,6 +1,6 @@
 body{
   background-color: #ebe69e;
-  background: linear-gradient(rgb(230, 226, 164), rgb(189, 189, 96), rgb(179, 143, 60));
+  background: linear-gradient(rgb(112, 139, 140), rgb(212, 226, 228), rgb(97, 140, 140));
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -17,7 +17,7 @@ body{
 
 .image{
   border-radius: 30px;
-  height: 250px;
+  height: 265px;
   margin-left: 10px;
 }
 
