@@ -1,5 +1,16 @@
 import fotoLaurea from "./images/fotoLaurea.JPG";
 import angular from "./images/angular-icon-logo.png";
+import html5b from "./images/html5b.png";
+import cssimage from "./images/cssimage.png";
+import javascriptt from "./images/javascriptt.png";
+import visualstudio from "./images/visualstudio.png";
+import javaa from "./images/javaa.png";
+import postgre from "./images/postgre.png";
+import postmann from "./images/postmann (2).png";
+import bootstrap from "./images/bootstrap.png";
+import sasslogo from "./images/sasslogo.png";
+import wordpress from "./images/wordpress.png";
+import intellijj from "./images/intellijj.png";
 import { Card, Button } from "react-bootstrap";
 import pageInter from "./images/pageInter.png";
 import schermoDisney from "./images/schermoDisney.png";
@@ -10,7 +21,12 @@ import jsPDF from "jspdf";
 const Intro = () => {
   const generatePDF = () => {
     const input = document.getElementById("dowloadPort");
-    html2canvas(input, { scrollY: -window.scrollY }).then((canvas) => {
+    html2canvas(input, {
+      scrollY: -window.scrollY,
+      scrollX: 0,
+      backgroundColor: "#ebe69e",
+      scale: 2,
+    }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF({
         orientation: "portrait",
@@ -18,15 +34,16 @@ const Intro = () => {
         format: [canvas.width, canvas.height], // Imposto le dimensioni del PDF
       });
 
-      const marginTop = 20;
-      pdf.addImage(imgData, "PNG", 0, marginTop);
-      pdf.save("Myportfolio.pdf");
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save("myPortfolio.pdf");
     });
   };
 
   return (
     <>
-      <div id="dowloadPort">
+      <div id="dowloadPort" className="pt-2">
         <div>
           <h3 className="text-black text mt-3 text-center ms-3 fs-4 fw-bolder fst-italic">
             Angela Prestano
@@ -34,19 +51,19 @@ const Intro = () => {
           <div className="d-flex justify-content-center mt-4">
             <img
               src={fotoLaurea}
-              width={"220px"}
+              width={"260px"}
               alt="Foto Laurea"
               className="image"
             ></img>
           </div>
-          <p className="bio ms-3 mt-3 text-center">
+          <p className="bio ms-3 mt-4 text-center">
             Sono una Junior full stack developer con tanta voglia di crescere,
             sempre pronta ad imparare nuove tecnologie e skills <br></br> per
             stare sempre al passo, poichè ad oggi il mondo tech è in continua
             evoluzione. <br></br> Mi impegno a portare a termine i lavori con
             dedizione e passione, prediligo molto il lavoro in team <br></br>{" "}
-            poichè si ha sempre la possibilità di confronto e sopratutto si ha
-            modo di comunicare sempre con i colleghi.
+            poichè si ha sempre la possibilità di confronto e sopratutto
+            possibilità di comunicare sempre con i colleghi.
             <br />
           </p>
           <h2 className="tech fs-4 ms-3 fw-bolder mt-5 text-center ">
@@ -54,27 +71,23 @@ const Intro = () => {
           </h2>
           <h5 className="text-center ms-4 mt-5 fst-italic">Front-end</h5>
           <div className="d-flex flex-wrap justify-content-center ms-4 mt-5 ">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
-              width={"90px"}
-              height={"90px"}
-            ></img>
+            <img src={html5b} width={"90px"} height={"90px"}></img>
 
             <img
-              src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+              src={cssimage}
               width={"90px"}
               height={"90px"}
               className="ms-4"
             ></img>
 
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgh0cmaLPqUaZd6iuo7D_iaOeLYb1QUdjMiA&s"
+              src={javascriptt}
               width={"90px"}
               height={"90px"}
               className="ms-5"
             ></img>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png"
+              src={sasslogo}
               width={"90px"}
               height={"90px"}
               className="ms-5"
@@ -92,13 +105,13 @@ const Intro = () => {
               className="ms-5"
             ></img>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+              src={bootstrap}
               width={"90px"}
               height={"90px"}
               className="ms-5"
             ></img>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519"
+              src={visualstudio}
               alt="vsCode"
               width={"90px"}
               height={"90px"}
@@ -111,7 +124,7 @@ const Intro = () => {
               className="ms-5 mt-1"
             ></img>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/174/174881.png"
+              src={wordpress}
               width={"90px"}
               height={"90px"}
               className="ms-5 mt-1"
@@ -127,32 +140,24 @@ const Intro = () => {
             <h5 className=" mt-5 ms-4 text-center fst-italic">Back-end</h5>
             <div className="d-flex flex-wrap justify-content-center mt-5">
               <img
-                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png"
+                src={javaa}
                 width={"90px"}
                 height={"90px"}
                 className="ms-5 mb-3"
               ></img>
               <img
-                src="https://static-00.iconduck.com/assets.00/postgresql-icon-1987x2048-v2fkmdaw.png"
+                src={postgre}
                 width={"90px"}
                 height={"90px"}
                 className="ms-5 mb-3"
               ></img>
-              <img
-                src="https://www.svgrepo.com/show/354202/postman-icon.svg"
-                height={"90px"}
-                className="ms-5 mb-3"
-              ></img>
+              <img src={postmann} height={"90px"} className="ms-5 mb-3"></img>
               <img
                 src="data:image/png;base64,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"
                 height={"90px"}
                 className="ms-5 mb-3"
               ></img>
-              <img
-                src="https://noemipusceddu.netlify.app/assets/intellij-BWS__E_8.png"
-                height={"90px"}
-                className="ms-5 mb-3"
-              ></img>
+              <img src={intellijj} height={"90px"} className="ms-5 mb-3"></img>
             </div>
             <h5 className="mt-5 ms-4 text-center fst-italic">
               Strumenti di utilizzo
@@ -174,53 +179,64 @@ const Intro = () => {
             <div>
               <h4 className="text-center mt-5 fw-bolder fst-italic">Progect</h4>
               <div className=" d-flex justify-content-evenly pt-3">
-                <div className=" cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={pageInter} />
-                    <Card.Body>
-                      <Card.Title>InterStore</Card.Title>
-                      <Card.Text>Sito e-commerce di calcio.</Card.Text>
-                    </Card.Body>
-                    <div className="d-flex justify-content-end me-2">
-                      <Button className="but1 ms-2 mb-1">
-                        <a href="https://github.com/Angiprestano/shop-football-front.git">
-                          Click for repo
-                        </a>
-                      </Button>
-                    </div>
-                  </Card>
-                </div>
-                <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={schermoDisney} />
-                    <Card.Body>
-                      <Card.Title>Disney Plus</Card.Title>
-                      <Card.Text>Piattaforma disney plus</Card.Text>
-                    </Card.Body>
-                    <div className="d-flex justify-content-end me-2">
-                      <Button className="but1 ms-2 mb-1 ">
+                <div className="row ">
+                  <div className=" cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img variant="top" src={pageInter} />
+                      <Card.Body>
+                        <Card.Title>InterStore</Card.Title>
+                        <Card.Text>Sito e-commerce di calcio.</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
+                        <Button className="but1 ms-2 mb-1">
+                          <a href="https://github.com/Angiprestano/shop-football-front.git">
+                            Click for repo
+                          </a>
+                        </Button>
+                      </div>
+                    </Card>
+                  </div>
+                  <div className="col-12 col-md-4 d-flex justify-content-center mb-4 ">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img
+                        variant="top"
+                        src={schermoDisney}
+                        alt="Disney Plus Screen"
+                      />
+                      <Card.Body>
+                        <Card.Title>Disney Plus</Card.Title>
+                        <Card.Text>Piattaforma Disney Plus</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
                         <a href="https://github.com/Angiprestano/disneyplus-create.git">
-                          Click for repo
+                          <Button className="but1 ms-2 mb-1">
+                            Click for repo
+                          </Button>
                         </a>
-                      </Button>
-                    </div>
-                  </Card>
-                </div>
-                <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4">
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src={meteoPag} />
-                    <Card.Body>
-                      <Card.Title>Meteo</Card.Title>
-                      <Card.Text>Website meteo</Card.Text>
-                    </Card.Body>
-                    <div className="d-flex justify-content-end me-2">
-                      <Button className="but1 ms-2 mb-1">
+                      </div>
+                    </Card>
+                  </div>
+
+                  <div className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <Card style={{ width: "18rem" }}>
+                      <Card.Img
+                        variant="top"
+                        src={meteoPag}
+                        alt="Meteo Website Screen"
+                      />
+                      <Card.Body>
+                        <Card.Title>Meteo</Card.Title>
+                        <Card.Text>Website Meteo</Card.Text>
+                      </Card.Body>
+                      <div className="d-flex justify-content-end me-2">
                         <a href="https://github.com/Angiprestano/create-meteo.git">
-                          Click for repo
+                          <Button className="but1 ms-2 mb-1">
+                            Click for repo
+                          </Button>
                         </a>
-                      </Button>
-                    </div>
-                  </Card>
+                      </div>
+                    </Card>
+                  </div>
                 </div>
               </div>
 

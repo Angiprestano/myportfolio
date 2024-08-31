@@ -1,11 +1,13 @@
 body{
   background-color: #ebe69e;
-  background: linear-gradient(rgb(225, 222, 171), rgb(209, 209, 131), rgb(179, 143, 60));
+  background: linear-gradient(rgb(230, 226, 164), rgb(189, 189, 96), rgb(179, 143, 60));
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .bio{
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  color: rgb(64, 10, 10);
 }
 
 .App {
@@ -15,6 +17,8 @@ body{
 
 .image{
   border-radius: 30px;
+  height: 250px;
+  margin-left: 10px;
 }
 
 .smallbtn{
