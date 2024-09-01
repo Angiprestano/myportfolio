@@ -27,7 +27,7 @@ const Intro = () => {
     html2canvas(input, {
       scrollY: -window.scrollY,
       scrollX: 0,
-      backgroundColor: "#ebe69e",
+      backgroundColor: "#72a5aa",
       scale: 2,
     }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
@@ -73,7 +73,7 @@ const Intro = () => {
             Tech Skills:
           </h2>
           <h5 className="text-center ms-4 mt-5 fst-italic">Front-end</h5>
-          <div className="d-flex flex-wrap justify-content-center ms-4 mt-5 ">
+          <div className="icons d-flex flex-wrap justify-content-center ms-4 mt-5 ">
             <img src={html5b} width={"90px"} height={"90px"}></img>
 
             <img
@@ -141,7 +141,7 @@ const Intro = () => {
           </div>
           <div className="mb-4 ">
             <h5 className=" mt-5 ms-4 text-center fst-italic">Back-end</h5>
-            <div className="d-flex flex-wrap justify-content-center mt-5">
+            <div className="icons d-flex flex-wrap justify-content-center mt-5">
               <img
                 src={javaa}
                 width={"90px"}
@@ -165,7 +165,7 @@ const Intro = () => {
             <h5 className="mt-5 ms-4 text-center fst-italic">
               Strumenti di utilizzo
             </h5>
-            <div className="mt-4 d-flex justify-content-center">
+            <div className="icons mt-4 d-flex justify-content-center">
               <img
                 src="data:image/png;base64,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"
                 width={"90px"}
@@ -229,7 +229,7 @@ const Intro = () => {
                       />
                       <Card.Body>
                         <Card.Title>Meteo</Card.Title>
-                        <Card.Text>Website Meteo</Card.Text>
+                        <Card.Text>Site Meteo</Card.Text>
                       </Card.Body>
                       <div className="d-flex justify-content-end me-2">
                         <a href="https://github.com/Angiprestano/create-meteo.git">
@@ -269,7 +269,7 @@ const Intro = () => {
                       />
                       <Card.Body>
                         <Card.Title>Spotify</Card.Title>
-                        <Card.Text>Website spotify</Card.Text>
+                        <Card.Text>Platform spotify</Card.Text>
                       </Card.Body>
                       <div className="d-flex justify-content-end me-2">
                         <a href="">
@@ -335,7 +335,7 @@ const Intro = () => {
         </Button>
         <Button
           variant="info"
-          className=" small-btn rounded-4 mb-3 border-white d-flex justify-content-center align-items-center text-white fw-bolder"
+          className="small-btn rounded-4 mb-3 border-white d-flex justify-content-center align-items-center text-white fw-bolder"
           href="/AngelaPrestano-CV.pdf"
           download="AngelaPrestano-CV.pdf"
         >

@@ -1,5 +1,5 @@
 body{
-  background-color: #ebe69e;
+  background-color: #72a5aa;
   background: linear-gradient(rgb(112, 139, 140), rgb(212, 226, 228), rgb(97, 140, 140));
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -7,7 +7,7 @@ body{
 .bio{
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: large;
-  color: rgb(64, 10, 10);
+  color: rgb(44, 8, 8);
 }
 
 .App {
@@ -21,17 +21,7 @@ body{
   margin-left: 10px;
 }
 
-.smallbtn{
 
-    padding: 0.5rem 1rem; 
-    font-size: 0.875rem; 
-    height: auto; 
-    min-width: 100px; 
-    line-height: 1.5; 
-    
-    
-  }
-  
   .small-btn p {
     margin: 3px;
     font-size: inherit;
@@ -39,7 +29,7 @@ body{
   }
 
 .but1{
-  background-color: #9ab0e7;
+  background-color: #7e9ce9;
   color: rgb(27, 27, 66);
   width: 120px;
 }
@@ -100,4 +90,28 @@ a{
   to {
     transform: rotate(360deg);
   }
+}
+
+.small-btn:active{
+  cursor: pointer;
+  scale: (1.2);
+}
+
+.small-btn:hover{
+  transform: scale(1.1);
+  transition: 0.8s;
+  background-color: #2d3138;
+}
+
+.icons:active{
+  cursor: pointer;
+  scale: (1.1);
+ 
+  
+}
+
+.icons:hover{
+  transform: scale(1.1);
+  transition: 0.4s;
+ filter: brightness(1.3);
 }
