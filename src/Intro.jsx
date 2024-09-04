@@ -180,7 +180,7 @@ const Intro = () => {
               ></img>
             </div>
             <div>
-              <h4 className="text-center mt-5 fw-bolder fst-italic">Progect</h4>
+              <h4 className="text-center mt-5 fw-bolder fst-italic">Project</h4>
               <div className=" d-flex justify-content-evenly pt-3">
                 <div className="row ">
                   <div className="cardd col-12 col-md-4 d-flex justify-content-center mb-4 ">
